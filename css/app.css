@@ -15,7 +15,11 @@ footer {
     color:rgba(255,255,255,.4);
     font-size: 13px;
     letter-spacing: 2px;
-    text-decoration: none;
+    text-decoration: none; 
+}
+#nav-footer a:hover{
+    cursor: pointer;
+    color: white;
 }
 .navbar{
     font-family: "proxima-nova";
