@@ -1,11 +1,14 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
-body{
-    font-family: "proxima-nova"
+html, body {
+    height: 100%;
 }
 
+body{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
 footer {
-    position:static;
-    bottom:10px;
+    position: fixed;
+    bottom:0px;
     border-top:1px solid #e3e3e3;
     width:100%;
     left:0px;
@@ -13,8 +16,29 @@ footer {
     padding:10px;
     background-color: #26262a
 }
-div #header{
-
+h4{
+    color:(26, 26, 26, 0.901961);
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 40px;
+} 
+p{
+  color: rgba(26,26,26,.6);
+  font-weight: 400;  
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+.backgroundImg{
+    min-width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
 }
 #nav-footer a{
     color:rgba(255,255,255,.4);
@@ -31,8 +55,35 @@ div #header{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 400;
-    color: rgba(255,255,255,.8);
+    position: absolute;
+    width: 100%;
+    background-color: rgba(26,26,26,.00);
+    color:rgb(255,255,255);
+    border:none;   
 }
+.navbar-inverse .navbar-nav>li>a{
+    color:rgba(255, 255, 255, 0.6);
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-inverse .navbar-toggle{
+    border:none;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border:none;
+}
+div #textOverlay{
+    padding-top: 350px;
+    color:rgba(255, 255, 255, 0.9);
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+
 /*Change layout for non-mobile browsers*/
 @media screen and (min-width:768px){
 .navbar-brand{

@@ -1,7 +1,19 @@
 <!-- Home -->
-<div>
-	<img src="" class="img-resposive" alt="Responsive image">
-	<div id="header" ng-repeat ="ele in data">{{ele.Title}}
-		<div id="content">{{ele.Content}}</div>
-	</div>
+
+<div class="backgroundImg" style = "background-image: url('img/rainer.jpg')">
+    <p id="textOverlay">More Content</p>
 </div>
+
+<div class ="container" ng-repeat="ele in data">
+	<h4>{{ele.Title}}</h4>
+    <p>{{ele.Content}}</p>
+    <div ng-if="ele.Title!=null" class="row">
+        <div class = "col-xs-3">
+            <a href ="#" class="thumbnail">
+                <img src={{source images}} alt ="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Recent accomplishments will include a Boostrap thumbnail -->
