@@ -1,10 +1,11 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 body{
-    margin-bottom: 80px;
+    
+    font-family: "proxima-nova"
 }
 
 footer {
-    position:fixed;
+    position:static;
     bottom:10px;
     border-top:1px solid #e3e3e3;
     width:100%;
@@ -13,9 +14,10 @@ footer {
     padding:10px;
     background-color: #26262a
 }
+div #header{
 
+}
 #nav-footer a{
-    font-family: "proxima-nova";
     color:rgba(255,255,255,.4);
     font-size: 13px;
     letter-spacing: 2px;
@@ -26,7 +28,6 @@ footer {
     color: white;
 }
 .navbar{
-    font-family: "proxima-nova";
     font-size: 13px;
     text-decoration: none;
     letter-spacing: 2px;

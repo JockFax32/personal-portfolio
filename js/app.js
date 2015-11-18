@@ -26,24 +26,25 @@ myApp.config(function($stateProvider){
         })
 })
 
-.controller('HomeController',function()){
+.controller('HomeController',function($scope, $http){
     $http.get('data/json/home.json').success(function(response){
+        $scope.data = response;
+        console.log($scope.data)
+    })
+})
 
-    })    
-}
-
-.controller('ProjectController', function($scope){
+.controller('ProjectController', function($scope,$http){
     
 })
 
 
-.controller('AboutController', function($scope){
+.controller('AboutController', function($scope,$http){
     
 })
 
-.controller('ResumeController', function($scope){
+.controller('ResumeController', function($scope,$http){
     
 })
-.controller('ContactController', function($scope){
+.controller('ContactController', function($scope,$http){
     
 })
