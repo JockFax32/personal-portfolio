@@ -24,18 +24,17 @@
       <header>
 
         <!-- Create links to different sections -->
-          <nav class ="navbar navbar-inverse">
-            <div class="container-fluid">
+          <nav class ="navbar navbar-inverse navbar-static-top">
+            <div class="container">
               <div class="navbar-header">
-                  <span ng-show="">HEADER TEXT ON MOBILE</span>
-                  <!-- Button may not be working due to mising ids -->
-                  <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger" data-toggle="collapse" aria-expanded="false">
+                  <span class ="navbar-brand">Lorem Ipsum</span>
+                  <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target = ".navHeaderCollapse" aria-expanded="false">
                   </button>
                 </div>
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse navHeaderCollapse">
               <ul class="nav navbar-nav">
-                <li><a ui-sref="home">HOME</a></li>
+                <li class="active"><a ui-sref="home">HOME</a></li>
                 <li><a ui-sref="projects">PROJECTS</a></li>
                 <li><a ui-sref="about">ABOUT</a></li>
                 <li><a ui-sref="resume">RESUME</a></li>

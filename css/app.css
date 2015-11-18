@@ -1,4 +1,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+body{
+    margin-bottom: 80px;
+}
 
 footer {
     position:fixed;
@@ -10,6 +13,7 @@ footer {
     padding:10px;
     background-color: #26262a
 }
+
 #nav-footer a{
     font-family: "proxima-nova";
     color:rgba(255,255,255,.4);
@@ -28,4 +32,11 @@ footer {
     letter-spacing: 2px;
     font-weight: 400;
     color: rgba(255,255,255,.8);
+}
+/*Change layout for non-mobile browsers*/
+@media screen and (min-width:768px){
+.navbar-brand{
+    visibility: hidden;
+}
+
 }

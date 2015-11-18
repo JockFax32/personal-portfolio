@@ -8,7 +8,7 @@ myApp.config(function($stateProvider){
             templateUrl: 'templates/home.html',
             controller: 'HomeController',
         }).state('projects',{
-            url:'/content',
+            url:'/projects',
             templateUrl:'templates/projects.html',
             controller: 'ProjectController',
         }).state('about',{
@@ -26,18 +26,24 @@ myApp.config(function($stateProvider){
         })
 })
 
-// 
-.controller('HomeController',function($scope){
+.controller('HomeController',function()){
+    $http.get('data/json/home.json').success(function(response){
+
+    })    
+}
+
+.controller('ProjectController', function($scope){
     
 })
 
-// 
+
 .controller('AboutController', function($scope){
     
 })
 
-
-.controller('ContentController', function($scope){
+.controller('ResumeController', function($scope){
     
 })
-
+.controller('ContactController', function($scope){
+    
+})
