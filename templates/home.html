@@ -7,14 +7,16 @@
 <div class ="container" ng-repeat="ele in data">
 	<h4>{{ele.Title}}</h4>
     <p>{{ele.Content}}</p>
-    <div ng-if="ele.Title!=null" class="row">
-        <div class = "col-xs-3">
-            <a href ="#" class="thumbnail">
-                <img src={{source images}} alt ="">
-            </a>
+    <div ng-if="ele.Images!=null"> 
+        <div class="row">
+            <div class = "col-xs-3">
+                <a href ="" class="thumbnail">
+                    <img id= "thumbnail-projects"src="img/dawg.jpg"alt ="">
+                </a>
+            </div>
         </div>
     </div>
-</div>
+</div> 
 
 <!-- Recent accomplishments will include a Boostrap thumbnail -->
 
