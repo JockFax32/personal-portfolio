@@ -1,2 +1,5 @@
-[{"Title":"My Philosophy","Content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.","Images":["img/dawg.jpg","img/spotify.jpg","img/police.png"],"Links":null},
-{"Title":"My Work","Content":null,"Images":["img/dawg.jpg","img/spotify.jpg","img/police.png"],"Links":null}]
+[{"Title":"My Philosophy","Content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio."},
+{"Title":"My Work","Content":null,"Images":["img/dawg.jpg","img/spotify.jpg","img/police.png", "img/kittens.jpg"],"Links":["dawg","spotify","police","crud"]}
+{"Project":"Dawg Coffee","Description":"The object was to create a mobile responsive web page with many of the built-in functionalities associated with HTML elements and CSS styles","Skills":["HTML","CSS","Boostrap"]}]
+
+
