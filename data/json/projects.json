@@ -1,5 +1,8 @@
 [{"Title":"My Philosophy","Content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio."},
-{"Title":"My Work","Content":null,"Images":["img/dawg.jpg","img/spotify.jpg","img/police.png", "img/kittens.jpg"],"Links":["dawg","spotify","police","crud"]}
-{"Project":"Dawg Coffee","Description":"The object was to create a mobile responsive web page with many of the built-in functionalities associated with HTML elements and CSS styles","Skills":["HTML","CSS","Boostrap"]}]
+{"Title":"My Work","Content":null,"Images":["img/dawg.jpg","img/spotify.jpg","img/police.png", "img/kittens.jpg"],"Links":["dawg","spotify","police","crud"]},
+{"Project":"Dawg Coffee","Description":"Create a mobile responsive web page with many of the built-in functionalities associated with HTML elements and CSS styles","Skills":["HTML","CSS","Boostrap"]},
+{"Project":"Leaflet","Description":"Ceate an interactive map of the crowdsourced police shootings data that was crowdsourced from Deadspin last fall","Skills":["AJAX","Leaflet","Javascript","jQuery"]},
+{"Project":"CRUD Web Application","Description":"Build a web application with centralized data storage and authentication that allows users to create,read,update, and delete data","Skills":["jQuery API calls","Parse"]},
+{"Project":"Spotify App","Description":"Build a web application with Angular that accesses data from the Spotify API","Skills":["Angular"]}]
 
 

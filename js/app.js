@@ -25,39 +25,35 @@ myApp.config(function($stateProvider){
             controller:'ContactController'
         })
 })
-
 .controller('HomeController',function($scope, $http){
     $http.get('data/json/home.json').success(function(response){
+        console.log('Get Data')
         $scope.data = response;
     })
 })
-
 .controller('ProjectController', function($scope,$http){
     $http.get('data/json/projects.json').success(function(response){
+        console.log('Get Data')
         $scope.data=response;
+        $scope.projects
+       
     })    
 })
-
-
 .controller('AboutController', function($scope,$http){
-    $http.get('data/json/about.json').success(function(response){
+    $http.get('data/json/projects.json').success(function(response){
+        
         $scope.data=response;
-    })
-    
+    })  
 })
-
 .controller('ResumeController', function($scope,$http){
     $http.get('data/json/resume.json').success(function(response){
         $scope.data=response;
     })
-    
 })
 .controller('ContactController', function($scope,$http){
     $http.get('data/json/contact/json').success(function(response){
         $scope.data=response;
-    })
-
-    
+    })  
 })
 
 // https://shancarter.github.io/mr-data-converter/

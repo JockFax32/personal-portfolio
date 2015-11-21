@@ -3,10 +3,10 @@
     <p id="textOverlay">More Content</p>
 </div>
 <div class="container" ng-repeat="ele in data">
-	<h4>{{ele.Title}}</h4>
-	<p>{{ele.Content}}</p>
-	
-	<div ng-if="ele.Images!=null"> 
+    <h4>{{ele.Title}}</h4>
+    <p>{{ele.Content}}</p>
+    
+    <div ng-if="ele.Images!=null"> 
         <div class="row">
             <div class = "col-xs-4" ng-repeat="image in ele.Images">
                 <a ng-href ="#{{}}" class="thumbnail" style="border:none">
@@ -18,12 +18,12 @@
     <hr>
 </div>
  <div class="container" ng-attr id="{{}}" >
-    	<h4>PROJECT TITLE</h4>
-    	<p>DESCRIPTION OF PROJECT</p>
-    	<h5>SKILLS USED</h5>
-    	<p>SKILLS</p>
-    	<a href="">LINK TO STUDENT WEB PAGE</a>
-    	<hr>
+        <h4>PROJECT TITLE</h4>
+        <p>DESCRIPTION OF PROJECT</p>
+        <h5>SKILLS USED</h5>
+        <p>SKILLS</p>
+        <a href="">LINK TO STUDENT WEB PAGE</a>
+        <hr>
     </div>
 
 <!-- ng-attr id = {{expression}} -->
