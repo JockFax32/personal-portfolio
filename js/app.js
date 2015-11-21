@@ -27,21 +27,16 @@ myApp.config(function($stateProvider){
 })
 .controller('HomeController',function($scope, $http){
     $http.get('data/json/home.json').success(function(response){
-        console.log('Get Data')
         $scope.data = response;
     })
 })
 .controller('ProjectController', function($scope,$http){
     $http.get('data/json/projects.json').success(function(response){
-        console.log('Get Data')
-        $scope.data=response;
-        $scope.projects
-       
+        $scope.data=response;       
     })    
 })
 .controller('AboutController', function($scope,$http){
-    $http.get('data/json/projects.json').success(function(response){
-        
+    $http.get('data/json/about.json').success(function(response){
         $scope.data=response;
     })  
 })

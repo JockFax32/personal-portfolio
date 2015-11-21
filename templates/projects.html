@@ -1,4 +1,4 @@
-<!-- Projects page -->
+<!--Projects page -->
 <div class="backgroundImg" style = "background-image: url('img/projects.jpg')">
     <p id="textOverlay">More Content</p>
 </div>
@@ -9,21 +9,28 @@
     <div ng-if="ele.Images!=null"> 
         <div class="row">
             <div class = "col-xs-4" ng-repeat="image in ele.Images">
-                <a ng-href ="#{{}}" class="thumbnail" style="border:none">
+                <a ng-href ="#{{ele.Link}}" class="thumbnail" style="border:none">
                     <img id="thumbnail-projects" ng-src="{{image}}"alt ="link"/>
                 </a>
             </div>
         </div>
     </div>
-    <hr>
 </div>
- <div class="container" ng-attr id="{{}}" >
-        <h4>PROJECT TITLE</h4>
-        <p>DESCRIPTION OF PROJECT</p>
-        <h5>SKILLS USED</h5>
-        <p>SKILLS</p>
-        <a href="">LINK TO STUDENT WEB PAGE</a>
-        <hr>
+<hr>
+    <!-- Create a div for each project that is in the JSON -->
+    <div ng-repeat="ele in data" ng-if="ele.Project!=null">
+        <div class="container" ng-attr-id="{{ele.Link}}">
+                <h3>{{ele.Project}}</h3>
+                <h5>THE CHALLENGE</h5>
+                <p>{{ele.Description}}</p>
+                <h5>SKILLS REQUIRED</h5>
+                    <ul ng-repeat="skill in ele.Skills">
+                        <li>{{skill}}</li>
+                    </ul>
+                <a ng-href="http://students.washington.edu/foxtjack/info343/{{ele.Link}}" target="_blank">LINK TO STUDENT WEB PAGE</a>
+                <hr>
+        </div>
     </div>
+</div>
 
-<!-- ng-attr id = {{expression}} -->
+<!-- ng-attr id = {{expression}} 

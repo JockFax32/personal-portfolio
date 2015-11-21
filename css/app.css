@@ -88,6 +88,14 @@ p{
     margin-top: 10px;
 
 }
+img#thumbnail-projects:hover{
+    -webkit-filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+    filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+
+}
+#dawg-coffee{
+    color: blue;
+}
 
 div #textOverlay{
     padding-top: 350px;
