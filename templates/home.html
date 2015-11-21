@@ -9,14 +9,16 @@
     <p>{{ele.Content}}</p>
     <div ng-if="ele.Images!=null"> 
         <div class="row">
-            <div class = "col-xs-3">
-                <a href ="" class="thumbnail">
-                    <img id= "thumbnail-projects"src="img/dawg.jpg"alt ="">
+            <div class = "col-xs-4" ng-repeat="image in ele.Images">
+                <a href ="" class="thumbnail" style="border:none">
+                    <img id="thumbnail-projects" ng-src="{{image}}"alt ="link"/>
                 </a>
             </div>
         </div>
     </div>
+    <hr>
 </div> 
 
 <!-- Recent accomplishments will include a Boostrap thumbnail -->
 
+<!-- REST API -->

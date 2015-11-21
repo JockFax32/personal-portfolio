@@ -29,23 +29,34 @@ myApp.config(function($stateProvider){
 .controller('HomeController',function($scope, $http){
     $http.get('data/json/home.json').success(function(response){
         $scope.data = response;
-        console.log($scope.data)
     })
 })
 
 .controller('ProjectController', function($scope,$http){
-    
+    $http.get('data/json/projects.json').success(function(response){
+        $scope.data=response;
+    })    
 })
 
 
 .controller('AboutController', function($scope,$http){
+    $http.get('data/json/about.json').success(function(response){
+        $scope.data=response;
+    })
     
 })
 
 .controller('ResumeController', function($scope,$http){
+    $http.get('data/json/resume.json').success(function(response){
+        $scope.data=response;
+    })
     
 })
 .controller('ContactController', function($scope,$http){
+    $http.get('data/json/contact/json').success(function(response){
+        $scope.data=response;
+    })
+
     
 })
 

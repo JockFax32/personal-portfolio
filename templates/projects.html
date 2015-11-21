@@ -2,4 +2,11 @@
 <div class="backgroundImg" style = "background-image: url('img/projects.jpg')">
     <p id="textOverlay">More Content</p>
 </div>
-<div class="container"></div>
+<div class="container" ng-repeat="ele in data">
+	<h4>{{ele.Title}}</h4>
+	<p>{{ele.Content}}</p>
+
+
+
+
+</div>
