@@ -47,6 +47,7 @@ myApp.config(function($stateProvider){
 .controller('ResumeController', function($scope,$http){
     $http.get('data/json/resume.json').success(function(response){
         $scope.data=response;
+        console.log($scope.data)
     })
 })
 .controller('ContactController', function($scope,$http){

@@ -8,9 +8,9 @@
 	<h4>{{ele.Title}}</h4>
     <p>{{ele.Content}}</p>
     <div ng-if="ele.Images!=null"> 
-        <div class="row">
+        <div class="row"> 
             <div class = "col-xs-4" ng-repeat="image in ele.Images">
-                <a href ="" class="thumbnail" style="border:none">
+                <a ng-click="scrollTo(dawg-coffee)" class="thumbnail" style="border:none">
                     <img id="thumbnail-projects" ng-src="{{image}}"alt ="link"/>
                 </a>
             </div>
@@ -22,3 +22,6 @@
 <!-- Recent accomplishments will include a Boostrap thumbnail -->
 
 <!-- REST API -->
+<!-- ui-sref="projects({'#':'dawg-coffee'})" -->
+<!-- On hover ngShow a button with the title of 'View Project' which links to the URL  -->
+<!-- FA are displayed in an UL and use an ngIf statment to queue the UL (ie check to see if 'Contents' is an Array and has more than one elements) -->

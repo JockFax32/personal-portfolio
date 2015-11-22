@@ -2,4 +2,28 @@
 <div class="backgroundImg" style = "background-image: url('img/seattle.jpg')">
     <p id="textOverlay">More Content</p>
 </div>
-<div class="container"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4" ng-repeat="ele in data">
+			<ul>
+				<li style="display: inline" ng-show="ele.Title =='Skills' || ele.Content!= null">{{ele.Title}}</li>
+				<li ng-repeat="skill in ele.Content">{{skill}}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4" ng-repeat="ele in data">
+			<ul>
+				<li ng-show="ele.Title =='Work Experience'">{{ele.Title}}</li>
+				<li ng-repeat="job in ele.Jobs">{{job}}
+					<ul>
+						<li>{{ele.Cities[x]}}</li>
+					</ul>
+				</li>
+			</ul>
+		
+
+
+	</div>
+</div>
