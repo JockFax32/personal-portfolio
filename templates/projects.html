@@ -5,12 +5,12 @@
 <div class="container" ng-repeat="ele in data">
     <h4>{{ele.Title}}</h4>
     <p>{{ele.Content}}</p>
-    
     <div ng-if="ele.Images!=null"> 
         <div class="row">
             <div class = "col-xs-4" ng-repeat="image in ele.Images">
-                <a ng-click ="scrollTo('spotify-template')" class="thumbnail" style="border:none">
-                    <img id="thumbnail-projects" ng-src="{{image}}"alt ="link"/>
+                <a ng-click ="scrollTo(ele.Links[0])" class="thumbnail" style="border:none">
+                    <img id="thumbnail-projects" ng-src="{{image}}"/>
+                    {{ele.Links[0]}}
                 </a>
             </div>
         </div>
