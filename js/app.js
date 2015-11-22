@@ -30,9 +30,13 @@ myApp.config(function($stateProvider){
         $scope.data = response;
     })
 })
-.controller('ProjectController', function($scope,$http){
+.controller('ProjectController', function($scope,$http, $location, $anchorScroll){
     $http.get('data/json/projects.json').success(function(response){
-        $scope.data=response;       
+        $scope.data=response;
+        $scope.scrollTo = function(id){
+            $location.hash(id);
+            $anchorScroll();
+        }       
     })    
 })
 .controller('AboutController', function($scope,$http){
