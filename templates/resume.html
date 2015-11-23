@@ -6,37 +6,36 @@
 	<div class="row">
 		<div class="col-xs-4" ng-repeat="ele in data">
 			<ul>
-				<li style="display: inline" ng-show="ele.Title =='Skills' || ele.Content!= null">{{ele.Title}}</li>
-				<li ng-repeat="skill in ele.Content">{{skill}}</li>
+				<li ng-show="ele.Title =='Skills' || ele.Content!= null" id ="resumeTitle">{{ele.Title}}</li>	
+				<li ng-repeat="skill in ele.Content" id="resumeSkills">{{skill}}</li>
 			</ul>
 		</div>
-	
 	</div>
+	<hr>
 	<div class="row">
-		<div class="col-xs-4" ng-repeat="ele in data">
+		<div class="col-xs-12" ng-repeat="ele in data">
 			<ul>
-				<li ng-show="ele.Title =='Work Experience'">{{ele.Title}}</li>
-				<li ng-repeat="job in ele.Jobs">{{job.Company}}
+				<li ng-show="ele.Title =='Work Experience'"id="resumeTitle">{{ele.Title}}</li>	
+				<li ng-repeat="job in ele.Jobs" id="resumeHeader" style="padding-top:20px;">{{job.Company}}
 					<ul>
-					<li>{{job.Title}}</li>
-					<li>{{job.Description}}</li>
+					<li id="resumeHeader">{{job.Title}}</li>
+					<li id="resumeSkills">{{job.Description}}</li>
 					</ul>
 				</li>	
 			</ul>
 		</div>
 	</div>
+	<hr>
 	<div class="row">
-		<div class="col-xs-4">
+		<div class="col-xs-12" ng-repeat="ele in data">
 			<ul>
-				<li>Education</li>
-			</ul>
-		</div>
-
-			<div class= "col-xs-4" ng-repeat="ele in data">
-				<ul>
-					<li ng-repeat="school in ele.Schools">{{school.Name}}</li>
-					<li>{{school.Location}}</li>	
-				</ul>
+				<li ng-show="ele.Title=='Education'"id="resumeTitle">{{ele.Title}}</li>
+				<li ng-repeat="school in ele.Schools" id="resumeHeader">{{school.Name}}
+					<ul>
+						<li id="resumeSkills">{{school.Location}}</li>	
+					</ul>
+				</li>
+			</ul>		
 		</div>
 	</div>
 	<div id="padding"></div>

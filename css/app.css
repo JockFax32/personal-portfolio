@@ -140,11 +140,11 @@ a #faIcon:hover{
   text-decoration: none;
 
 }
-.btn:hover {
+/*.btn:hover {
   background: #666666;
   color: #1A1A1;
   text-decoration: none;
-}
+}*/
 #btnContainer{
     text-align: center;
     list-style-position: center;
@@ -154,7 +154,24 @@ a #faIcon:hover{
     text-align: center;
     color: rgba(26,26,26,.6);
     font-weight: 400; 
-    
+    padding-left: 0px;
+}
+#resumeTitle{
+    display: inline;
+    list-style: none;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: (26, 26, 26, 0.901961);
+    font-weight: bold; 
+}
+#resumeSkills {
+    font-weight: 400;
+    color: rgba(26,26,26,.6); 
+    list-style: none;
+   }
+#resumeHeader{
+    font-weight: 600;
+    list-style: none;
 }
 
 /*Change layout for non-mobile browsers*/
