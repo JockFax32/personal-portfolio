@@ -22,14 +22,16 @@
                 <h5>THE CHALLENGE</h5>
                 <p>{{ele.Description}}</p>
                 <h5>SKILLS REQUIRED</h5>
-                    <ul ng-repeat="skill in ele.Skills">
+                    <ul ng-repeat="skill in ele.Skills"id="projectSkills">
                         <li>{{skill}}</li>
                     </ul>
                  <h5>METHOD</h5>
                  <p>{{ele.Method}}</p> 
+                 <div id="btnContainer">
                     <a ng-href="http://students.washington.edu/foxtjack/info343/{{ele.Link}}" target="_blank">
                         <button type="button" class="btn btn-default">View Project</button>
                     </a>
+                </div>
                
                 <hr>
         </div>

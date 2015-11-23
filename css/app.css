@@ -18,7 +18,7 @@ footer {
     padding:10px;
     background-color: #26262a
 }
-h4{
+h4 ,h3{
     color:(26, 26, 26, 0.901961);
     text-align: center;
     font-style: oblique;
@@ -26,6 +26,16 @@ h4{
     padding-left: 60px;
     padding-right: 60px;
     margin-top: 40px;
+}
+h5{
+    color:(26, 26, 26, 0.901961);
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 40px;
+
 } 
 p{
   color: rgba(26,26,26,.6);
@@ -96,7 +106,7 @@ img#thumbnail-projects:hover{
 }
 div #textOverlay{
     padding-top: 400px;
-    color:rgba(255, 255, 255, 0.9);
+    color:rgba(255, 255, 255, 1);
     font-size: 70px;
     font-weight: bold;
     letter-spacing: 4px;
@@ -121,18 +131,30 @@ a #faIcon:hover{
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 2px;
-  font-family: Arial;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  letter-spacing: 2px;
   color: #ffffff;
   font-size: 16px;
   background: #1A1A1A;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-}
 
+}
 .btn:hover {
   background: #666666;
   color: #1A1A1;
   text-decoration: none;
+}
+#btnContainer{
+    text-align: center;
+    list-style-position: center;
+}
+#projectSkills li{
+    list-style:none;
+    text-align: center;
+    color: rgba(26,26,26,.6);
+    font-weight: 400; 
+    
 }
 
 /*Change layout for non-mobile browsers*/
