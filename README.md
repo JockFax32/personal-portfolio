@@ -1,7 +1,7 @@
 # personal-portfolio
 
 ##### 1. What is the URL of this site, as hosted on your student webserver (i.e., students.washington.edu/{uw-new-id}/info343/{project-name}) #####
->http://students.washington.edu/foxtjack/info343/personal-portfolio/
+>http://students.washington.edu/foxtjack/info343/personal-portfolio#/
 
 ##### 2. Did you receive any help from others (classmates, etc)? If so, please list who. #####
 > No
