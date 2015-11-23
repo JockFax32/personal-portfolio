@@ -1,16 +1,14 @@
-<!--Projects page -->
 <div class="backgroundImg" style = "background-image: url('img/projects.jpg')">
-    <p id="textOverlay">More Content</p>
+    <p id="textOverlay">Create</p>
 </div>
 <div class="container" ng-repeat="ele in data">
     <h4>{{ele.Title}}</h4>
     <p>{{ele.Content}}</p>
-    <div ng-if="ele.Images!=null"> 
+    <div> <!-- ng-if="ele.ImageLinks!=null"> --> 
         <div class="row">
-            <div class = "col-xs-4" ng-repeat="image in ele.Images">
-                <a ng-click ="scrollTo(ele.Links[0])" class="thumbnail" style="border:none">
-                    <img id="thumbnail-projects" ng-src="{{image}}"/>
-                    {{ele.Links}} Something
+            <div class = "col-xs-12 col-sm-6 col-md-4" ng-repeat="image in ele.ImagesLinks">
+                <a ng-click ="scrollTo(image.Link)" class="thumbnail" style="border:none">
+                    <img id="thumbnail-projects" ng-src="{{image.Image}}"/>
                 </a>
             </div>
         </div>
@@ -27,10 +25,18 @@
                     <ul ng-repeat="skill in ele.Skills">
                         <li>{{skill}}</li>
                     </ul>
-                <a ng-href="http://students.washington.edu/foxtjack/info343/{{ele.Link}}" target="_blank">LINK TO STUDENT WEB PAGE</a>
+                 <h5>METHOD</h5>
+                 <p>{{ele.Method}}</p> 
+                    <a ng-href="http://students.washington.edu/foxtjack/info343/{{ele.Link}}" target="_blank">
+                        <button type="button" class="btn btn-default">View Project</button>
+                    </a>
+               
                 <hr>
         </div>
     </div>
+    <div id="padding"></div>
 </div>
 
-<!-- ng-attr id = {{expression}} 
+<!-- ng-attr id = {{expression}} -->
+
+<!-- ImagesLinks 

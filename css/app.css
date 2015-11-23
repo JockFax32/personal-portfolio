@@ -41,6 +41,7 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    -webkit-filter:brightness(.75);
 }
 #nav-footer a{
     color:rgba(255,255,255,.4);
@@ -93,19 +94,46 @@ img#thumbnail-projects:hover{
     filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
 
 }
-#dawg-coffee{
-    color: blue;
-}
-
 div #textOverlay{
-    padding-top: 350px;
+    padding-top: 400px;
     color:rgba(255, 255, 255, 0.9);
     font-size: 70px;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
+    -webkit-filter: brightness(1) saturate(10);
+}
+#faIcon{
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 70px;
+    color:rgba(26,26,26,.6);
+    padding-bottom: 100px;
+}
+a #faIcon:hover{
+    color:#00aced;
+}
+#padding{
+    padding-bottom: 100px;
+}
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 2px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  background: #1A1A1A;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
 
+.btn:hover {
+  background: #666666;
+  color: #1A1A1;
+  text-decoration: none;
+}
 
 /*Change layout for non-mobile browsers*/
 @media screen and (min-width:768px){

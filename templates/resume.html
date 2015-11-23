@@ -1,6 +1,5 @@
-<!-- Resume Page -->
 <div class="backgroundImg" style = "background-image: url('img/seattle.jpg')">
-    <p id="textOverlay">More Content</p>
+    <p id="textOverlay">Share</p>
 </div>
 
 <div class="container">
@@ -11,19 +10,34 @@
 				<li ng-repeat="skill in ele.Content">{{skill}}</li>
 			</ul>
 		</div>
+	
 	</div>
 	<div class="row">
 		<div class="col-xs-4" ng-repeat="ele in data">
 			<ul>
 				<li ng-show="ele.Title =='Work Experience'">{{ele.Title}}</li>
-				<li ng-repeat="job in ele.Jobs">{{job}}
+				<li ng-repeat="job in ele.Jobs">{{job.Company}}
 					<ul>
-						<li>{{ele.Cities[x]}}</li>
+					<li>{{job.Title}}</li>
+					<li>{{job.Description}}</li>
 					</ul>
-				</li>
+				</li>	
 			</ul>
-		
-
-
+		</div>
 	</div>
-</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<ul>
+				<li>Education</li>
+			</ul>
+		</div>
+
+			<div class= "col-xs-4" ng-repeat="ele in data">
+				<ul>
+					<li ng-repeat="school in ele.Schools">{{school.Name}}</li>
+					<li>{{school.Location}}</li>	
+				</ul>
+		</div>
+	</div>
+	<div id="padding"></div>
+</div>	
