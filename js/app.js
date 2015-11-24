@@ -28,12 +28,6 @@ myApp.config(function($stateProvider){
 .controller('HomeController',function($scope, $http){
     $http.get('data/json/home.json').success(function(response){
         $scope.data = response;
-        $scope.hoverIn =function(){
-            this.hoverLink=true;
-        }
-        $scope.hoverOut= function(){
-            this.hoverLink = false;
-        }
     })
 })
 .controller('ProjectController', function($scope,$http, $location, $anchorScroll){
